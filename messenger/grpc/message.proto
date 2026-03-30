@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package message;
+
+service MessageService {
+  rpc ProcessMessage (MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {
+  string src = 1;
+  string dest = 2;
+  string body = 3; // JSON string (keep flexible for now)
+}
+
+message MessageResponse {
+  string status = 1;
+  string parsed = 2;
+}
