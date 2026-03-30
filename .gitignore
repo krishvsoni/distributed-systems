@@ -2,4 +2,6 @@ venv/
 pycache/
 *.pyc
 
+
+main.txt
 # Ignore the .env file which may contain sensitive information
